@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Aladin from "../img/Aladin.jpg";
 import BATB from "../img/BATB.jpg";

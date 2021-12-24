@@ -1,18 +1,12 @@
-import React, { Component } from "react";
-import up from "../img/v.png";
-import down from "../img/x.png";
+import React from "react";
 
 function Button({ type, onHandleClick }) {
-  // const imgURL = type === "up" ? up : down;
-
-  // const styles = {
-  //   backgroundImage: URL(imgURL),
-  // };
+  const icon = type === "up" ? "👍" : "👎";
 
   return (
-    <div className={type}>
-      <button onClick={onHandleClick}>{type}</button>
-    </div>
+    <button onClick={onHandleClick} className="Button">
+      {type} {icon}
+    </button>
   );
 }
 export default Button;

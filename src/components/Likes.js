@@ -1,13 +1,11 @@
-import React, { Component } from "react";
-import like from "../img/like.png";
-import dislike from "../img/dislike.png";
+import React from "react";
 
 function Likes({ type, counter }) {
-  //  const imgType = type === "like" ? like : dislike;
+  const icon = type === "like" ? "😍" : "😫";
+
   return (
     <div>
-      {/* <img src={imgType} style={width:}/> */}
-      <h2>{type}</h2>
+      <h2>{icon}</h2>
       <h2>{counter}</h2>
     </div>
   );
