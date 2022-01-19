@@ -16,7 +16,7 @@ function Movies({ idx }) {
   ];
 
   const styles = {
-    height: "70vh",
+    height: "50vh",
   };
   return (
     <div>

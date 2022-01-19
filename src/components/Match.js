@@ -12,10 +12,10 @@ export default class Match extends Component {
 
   changeCounter(addFac) {
     if (addFac === 1) {
-      this.setState({ likes: this.state.likes + 1 });
+      this.setState({ likes: (this.state.likes + 1) % 5 });
     } else {
       //  if (addFac === -1)
-      this.setState({ dislikes: this.state.dislikes + 1 });
+      this.setState({ dislikes: (this.state.dislikes + 1) % 5 });
     }
     this.setState({ movie: (this.state.movie + 1) % 5 });
   }
